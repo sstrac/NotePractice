@@ -17,9 +17,13 @@ export class AppComponent {
 
     nextNote = () => {
       this.note = this.getRandomNote()
+      log(this.note)
     }
 
     show = () => {
       this.visible = !this.visible
     }
+}
+export function log(item){
+  console.log(item)
 }
