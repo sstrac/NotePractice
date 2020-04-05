@@ -18,4 +18,8 @@ export class AppComponent {
     nextNote = () => {
       this.note = this.getRandomNote()
     }
+
+    show = () => {
+      this.visible = !this.visible
+    }
 }

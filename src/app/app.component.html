@@ -1,4 +1,5 @@
-<div [ngSwitch]="note">
+<group class="center">
+<div [ngSwitch]="note" class="flex">
   <img src="../assets/C4.png" *ngSwitchCase="'C4'">
   <img src="../assets/D4.png" *ngSwitchCase="'D4'">
   <img src="../assets/E4.png" *ngSwitchCase="'E4'">
@@ -11,9 +12,14 @@
   <img src="../assets/E5.png" *ngSwitchCase="'E5'">
   <img src="../assets/F5.png" *ngSwitchCase="'F5'">
   <img src="../assets/G5.png" *ngSwitchCase="'G5'">
+  <group>
+    <h1 *ngIf="visible" class="note">
+      {{ note[0] }}
+    </h1>
+  </group>
 </div>
-<div *ngIf="visible">
-  {{ note }}
+<div>
+  <button mat-raised-button color="accent" (click)="show()">Show</button>
+  <button mat-raised-button color="accent" (click)="nextNote()">Next</button>
 </div>
-<button (click)="!visible">Show</button>
-<button (click)="nextNote()">Next</button>
+</group>

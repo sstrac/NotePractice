@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.flex_reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flex_col{
+    display: flex;
+    flex-direction: column;
+}
+.center{
+    display: flex;
+    justify-content: space-around;
+}
+.note{
+    border-radius: 3%;
+    // border: solid;
+    // border-width: thin;
+    // border-color: rgb(156, 156, 156);
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 1px 1px 3px rgb(209, 209, 209);
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80px;
+    color: darkred;
+}
